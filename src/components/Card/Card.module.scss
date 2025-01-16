@@ -1,0 +1,111 @@
+@import "../../vars.scss";
+
+.card {
+  margin: 40px auto 0;
+  max-width: 290px;
+  width: 100%;
+  max-height: 300px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s all;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  }
+
+  &__icon {
+    max-width: 72px;
+    width: 100%;
+    height: 72px;
+  }
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 290px;
+    height: 130px;
+    border-radius: 14px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &_pink {
+      background: $pink;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 19px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 170px;
+    padding: 20px 13px;
+  }
+
+  &__term {
+    border-radius: 14px;
+    min-height: 12px;
+    padding: 6px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    background: $pink;
+    letter-spacing: -0.12px;
+
+    &_pink {
+      background: $pink;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 113%;
+    letter-spacing: 0.16px;
+  }
+
+  &__price {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 113%;
+    letter-spacing: 0.13px;
+  }
+
+  &__bottom {
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

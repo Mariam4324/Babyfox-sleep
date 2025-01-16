@@ -1,0 +1,62 @@
+.outer {
+  position: relative;
+  width: 40px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+label {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.12px;
+  color: #222;
+  transition: 0.3s all;
+  opacity: 0;
+  line-height: 4em;
+  cursor: pointer;
+}
+
+.inner:before,
+.inner:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: inherit;
+  background: #222;
+  left: 0;
+  transition: 0.3s all;
+}
+
+.inner:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.inner:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}

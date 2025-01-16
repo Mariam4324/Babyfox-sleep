@@ -1,0 +1,9 @@
+@import "../../vars.scss";
+
+.burger {
+  display: none;
+  align-items: center;
+  @media (max-width: 630px) {
+    display: flex;
+  }
+}

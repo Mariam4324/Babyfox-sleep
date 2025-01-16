@@ -1,0 +1,159 @@
+@import "../../vars.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // left: 50%;
+  // transform: translate(-50%, 50%);
+  max-width: 100vw;
+  width: 100%;
+  padding: 50px;
+  box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.25);
+  z-index: 50;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s all;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    margin-top: 28px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__term {
+    border-radius: 14px;
+    min-height: 12px;
+    max-height: 35px;
+    padding: 8px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    background: $pink;
+    letter-spacing: -0.12px;
+
+    &_pink {
+      background: $pink;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+  }
+
+  &-wrapper {
+    padding: 9px 20px;
+    border-radius: 14px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    &__label {
+      color: #222;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    &__text {
+      color: #222;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    &_pink {
+      background: $pink;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+  }
+
+  &__price {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__buy {
+    border-radius: 14px;
+    min-height: 36px;
+    padding: 8px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    background: $pink;
+    letter-spacing: -0.12px;
+    cursor: pointer;
+    border: 1px transparent solid;
+    transition: 0.3s all;
+
+    &:hover {
+      background: $primary;
+    }
+
+    &_pink {
+      background: $pink;
+    }
+
+    &_yellow {
+      background: $yellow;
+    }
+
+    &_blue {
+      background: $blue;
+    }
+  }
+
+  &__bottom {
+    margin-top: 35px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal {
+    padding: 20px;
+
+    &__name {
+      margin-top: 14px;
+    }
+
+    &__bottom {
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+  }
+}

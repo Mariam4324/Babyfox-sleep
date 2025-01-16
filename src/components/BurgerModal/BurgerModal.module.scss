@@ -1,0 +1,52 @@
+@import "../../vars.scss";
+
+.burger {
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 90;
+  }
+
+  &__close:hover {
+    fill: $primary;
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 26px;
+    transition: 0.5s all;
+    color: #222;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $primary;
+    text-decoration-line: underline;
+  }
+
+  &__list {
+    position: fixed;
+    background: #fff;
+    width: 290px;
+    height: 100vh;
+    z-index: 80;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 38px 0;
+  }
+
+  &__link:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  &__link {
+    display: block;
+  }
+}
