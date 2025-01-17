@@ -20,9 +20,11 @@ export const Footer = () => {
                 <hr className={css.footer__line}></hr>
                 <div className={css.footer__group}>
                     <div className={css.footer__contacts__aside}>
-                        <a className={`${css.footer__contact} ${css.footer__contact} ${css.footer_m}`} href="tel:+7 968 613 5142">
+                        <a className={`${css.footer__contact} ${css.footer__contact} ${css.footer_m}`} href="https://t.me/babyfox_sleep">
                             <div className={css.footer__box}>
-                                <img className={css.footer__icon} src={telegram} alt="telegram"></img>
+                                {/* <img className={css.footer__icon} src={telegram} alt="telegram"></img> */}
+                                <Icon iconPath={telegram}/>
+
                             </div>
                             <div className={css.footer__descr}>
                                 <div className={css.footer__caption}>telegram</div>
@@ -30,7 +32,7 @@ export const Footer = () => {
                             </div>
                         </a>
 
-                        <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="mailto:lanaaskasidze@gmail.com">
+                        <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="https://wa.me/79654041234">
                             <div className={css.footer__box}>
                                 <Icon iconPath={whatsapp} />
                             </div>
