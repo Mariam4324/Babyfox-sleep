@@ -3,6 +3,7 @@ import css from "./Footer.module.scss";
 import telegram from "./../../assets/telegram.svg";
 import whatsapp from "./../../assets/whatsApp.svg";
 import founder from "./../../assets/home_pic.jpg";
+import { Icon } from "../Icons/Icon";
 
 export const Footer = () => {
     return (
@@ -31,7 +32,7 @@ export const Footer = () => {
 
                         <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="mailto:lanaaskasidze@gmail.com">
                             <div className={css.footer__box}>
-                                <img className={css.footer__icon} src={whatsapp} alt="whatsapp"></img>
+                                <Icon iconPath={whatsapp} />
                             </div>
                             <div className={css.footer__descr}>
                                 <div className={css.footer__caption}>WhatsApp</div>

@@ -1,7 +1,7 @@
 import css from "./Home.module.scss";
 import photo from "../../assets/home_pic.jpg";
 import { Container } from "../../layout/Container/Container";
-import { Icons } from "../Icons/Icons";
+import { Icon } from "../Icons/Icon";
 import instIcon from "../../assets/inst.svg";
 import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsApp.svg";
@@ -20,9 +20,9 @@ export const Home = () => {
                         <div className={css.home__contacts}>
                             <p className={css.home__subtitle}>Контакты</p>
                             <div className={css.home__icons}>
-                                <Icons iconPath={instIcon} />
-                                <Icons iconPath={telegramIcon} />
-                                <Icons iconPath={whatsappIcon} />
+                                <Icon iconPath={instIcon} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} />
+                                <Icon iconPath={telegramIcon} link={"https://t.me/babyfox_sleep"} />
+                                <Icon iconPath={whatsappIcon} link={"https://wa.me/79654041234"} />
                             </div>
                         </div>
                     </div>

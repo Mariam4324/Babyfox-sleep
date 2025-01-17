@@ -158,9 +158,6 @@
     }
 
     .materials__cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill);
-        max-width: 696px;
         margin: 40px auto 0;
         gap: 55px;
     }
