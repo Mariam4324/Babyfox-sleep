@@ -23,7 +23,7 @@ export const Services = () => {
                     </div>
 
                     <div className={css.services__btn}>
-                        <Button btnBG={"pink"} buttonText={"перейти"} link={"https://t.me/babyfox_sleep"} />
+                        <Button btnBG={"standart"} buttonText={"связаться"} link={"https://t.me/babyfox_sleep"} />
                     </div>
                 </Container>
             </div>

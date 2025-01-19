@@ -6,7 +6,7 @@ export const ProductModal = ({ how, setModal, type, term, title, price, forWho }
     return (
         <div className={css.modal}>
             <div className={css.modal__top}>
-                <AnimatedCross setModal={setModal} />
+                <AnimatedCross setModal={setModal} /> 
                 <div className={`${css.modal__term} ${css[`modal__term_${type}`]}`}>{term}</div>
             </div>
 

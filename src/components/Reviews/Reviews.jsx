@@ -19,7 +19,7 @@ export const Reviews = () => {
                 </div>
 
                 <div className={css.reviews__btn}>
-                    <Button buttonText={"Перейти"} btnBG={"pink"} link={"https://t.me/babyfox_sleep"} />
+                    <Button buttonText={"больше отзывов"} btnBG={"standart"} link={"https://t.me/babyfox_sleep"} />
                 </div>
             </Container>
         </div>
