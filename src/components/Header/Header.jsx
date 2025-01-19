@@ -15,6 +15,7 @@ export const Header = () => {
                         <Link pathTo={"home"} linkText={"Главная"} />
                         <Link pathTo={"services"} linkText={"Услуги"} />
                         <Link pathTo={"reviews"} linkText={"Отзывы"} />
+                        <Link pathTo={"education"} linkText={"Обучение"} />
                         <Link pathTo={"about"} linkText={"О нас"} />
                     </ul>
 

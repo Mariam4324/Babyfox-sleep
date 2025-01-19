@@ -1,23 +1,23 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  background: #fff;
+    font-family: "Nunito", sans-serif;
+    background: #fff;
 }
 
 button {
-  outline: none;
-  background: transparent;
-  border: 1px transparent solid;
-  cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: 1px transparent solid;
+    cursor: pointer;
 }
 
 button,
@@ -25,41 +25,46 @@ input,
 img,
 span,
 a {
-  display: block;
+    display: block;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .title {
-  color: #222;
-  font-size: 28px;
-  font-weight: 800;
-  text-align: center;
-  line-height: 150%;
-  text-transform: uppercase;
+    color: #222;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 150%;
+    text-transform: uppercase;
 }
 
 .title-extra {
-  color: #222;
-  font-weight: 700;
+    color: #222;
+    font-weight: 700;
 }
 
 .text {
-  color: #222;
-  font-weight: 400;
-  line-height: 120%;
+    color: #222;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .text-comment {
-  color: #222;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 120%;
-  text-transform: lowercase;
+    color: #222;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 120%;
+    text-transform: lowercase;
+}
+
+.page-error {
+    margin-top: 20px;
+    text-align: center;
 }
