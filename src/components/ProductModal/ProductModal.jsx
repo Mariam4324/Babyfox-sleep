@@ -1,12 +1,26 @@
+import { useEffect } from "react";
 import { AnimatedCross } from "../AnimatedCross/AnimatedCross";
 import { Button } from "../Button/Button";
 import css from "./ProductModal.module.scss";
 
-export const ProductModal = ({ how, setModal, type, term, title, price, forWho }) => {
+export const ProductModal = ({ how, setModal, modal, type, term, title, price, forWho }) => {
+    useEffect(() => {
+        // Lockable scroll when opening a modal window
+        if (modal) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        // Clear the effect when the component is unmounted
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [modal]);
+
     return (
         <div className={css.modal}>
             <div className={css.modal__top}>
-                <AnimatedCross setModal={setModal} /> 
+                <AnimatedCross setModal={setModal} />
                 <div className={`${css.modal__term} ${css[`modal__term_${type}`]}`}>{term}</div>
             </div>
 

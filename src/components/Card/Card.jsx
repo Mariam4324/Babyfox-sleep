@@ -27,7 +27,7 @@ export const Card = ({ photoPath, type, term, title, price, forWho, how }) => {
         </div>
       </div>
 
-      {modal ? <ProductModal setModal={setModal} how={how} forWho={forWho} type={type} term={term} title={title} price={price} /> : ""}
+      {modal ? <ProductModal setModal={setModal} modal={ modal} how={how} forWho={forWho} type={type} term={term} title={title} price={price} /> : ""}
     </>
   );
 };
