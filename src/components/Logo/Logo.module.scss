@@ -1,6 +1,27 @@
 .logo {
-  cursor: pointer;
-  height: 72px;
-  width: 72px;
-  border-radius: 50%;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+
+    &__icon {
+        cursor: pointer;
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        color: #222;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 88px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .logo {
+        &__title {
+            font-size: 24px;
+        }
+    }
 }

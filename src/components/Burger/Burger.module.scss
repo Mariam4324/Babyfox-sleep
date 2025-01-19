@@ -3,7 +3,7 @@
 .burger {
   display: none;
   align-items: center;
-  @media (max-width: 630px) {
+  @media (max-width: 700px) {
     display: flex;
   }
 }

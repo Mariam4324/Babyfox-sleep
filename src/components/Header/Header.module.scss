@@ -1,10 +1,9 @@
 .header {
   position: sticky;
   z-index: 10;
-  top: 0
-  ;
+  top: 0;
   width: 100%;
-  padding: 26px 0;
+  padding: 10px 0;
   box-shadow: 2px 0px 8px 2px rgba(0, 0, 0, 0.1);
   background: #fff;
 
@@ -23,13 +22,10 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 700px) {
   .header {
     &-nav {
       display: none;
-      // width: 100%;
-      // justify-content: space-around;
-      // gap: 20px;
     }
   }
 }

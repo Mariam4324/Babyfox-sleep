@@ -1,6 +1,11 @@
 import css from "./Logo.module.scss";
-import logo from "../../assets/header_logo.webp";
+import logoIcon from "../../assets/header_logo.webp";
 
 export const Logo = () => {
-  return <img className={css.logo} src={logo} alt="babyfox.sleep" />;
+    return (
+        <div className={css.logo}>
+            <img className={css.logo__icon} src={logoIcon} alt="логотип Babyfox.sleep" />
+            <h1 className={css.logo__title}>Babyfox.sleep</h1>
+        </div>
+    );
 };
