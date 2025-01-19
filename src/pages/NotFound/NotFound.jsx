@@ -1,7 +1,7 @@
 export const NotFound = () => {
     return (
         <section>
-            <div className="bg-black text-white">
+            <div className="bg-white text-white">
                 <div className="flex h-screen">
                     <div className="m-auto text-center">
                         <div>
@@ -70,8 +70,9 @@ export const NotFound = () => {
                                 </defs>
                             </svg>
                         </div>
-                        <h2 className="text-sm md:text-base text-yellow-300 p-2 mb-4">Такой страницы не существует</h2>
-                        <a href="/" className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+                        <p className="text-black font-bold text-2xl mt-10">Такой страницы не существует</p>
+
+                        <a href="/" className="border border-black text-black hover:text-white hover:bg-black transition-colors duration-300 mt-5" style={{ borderRadius: "14px" }}>
                             На главную
                         </a>
                     </div>
