@@ -23,8 +23,7 @@ export const Footer = () => {
                         <a className={`${css.footer__contact} ${css.footer__contact} ${css.footer_m}`} href="https://t.me/babyfox_sleep">
                             <div className={css.footer__box}>
                                 {/* <img className={css.footer__icon} src={telegram} alt="telegram"></img> */}
-                                <Icon iconPath={telegram}/>
-
+                                <Icon iconPath={telegram} />
                             </div>
                             <div className={css.footer__descr}>
                                 <div className={css.footer__caption}>telegram</div>
@@ -48,8 +47,8 @@ export const Footer = () => {
                             <img className={css.footer__img} src={founder} alt="основатель babyfox"></img>
 
                             <div className={css.footer__descr}>
-                                <div className={`${css.footer__name} ${["title-extra"]}`}>Консультант по детскому сну</div>
-                                <div className={`${css.footer__post} ${["text-comment"]}`}>основатель</div>
+                                <div className={`${css.footer__name} ${["title-extra"]}`}>Виктория Симонова</div>
+                                <div className={`${css.footer__post} ${["text-comment"]}`}>основатель Babyfox.sleep</div>
                             </div>
                         </div>
 
