@@ -27,7 +27,7 @@ function App() {
         },
 
         {
-            path: "/education",
+            path: "education",
             element: (
                 <>
                     <Breadcrumbs />

@@ -7,7 +7,7 @@ import { Icon } from "../Icons/Icon";
 
 export const Footer = () => {
     return (
-        <div className={css.footer__top}>
+        <section id="footer" className={css.footer__top}>
             <Container>
                 <div className={css.footer__info}>
                     <div className={css.footer__titles}>
@@ -56,6 +56,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };

@@ -7,7 +7,7 @@ import { Button } from "../Button/Button.jsx";
 
 export const Services = () => {
     return (
-        <>
+        <section id="services">
             <div className={css.services}>
                 <Container>
                     <Title titleText={"Услуги"} />
@@ -23,10 +23,10 @@ export const Services = () => {
                     </div>
 
                     <div className={css.services__btn}>
-                        <Button btnBG={"standart"} buttonText={"связаться"} link={"https://t.me/babyfox_sleep"} />
+                        <Button btnBG={"standart"} buttonText={"написать консультанту по сну"} link={"https://t.me/babyfox_sleep"} />
                     </div>
                 </Container>
             </div>
-        </>
+        </section>
     );
 };

@@ -8,7 +8,7 @@ import materialPicture4 from "./../../assets/materials_pic4.jpeg";
 
 export const Materials = () => {
     return (
-        <section className={css.materials}>
+        <section id="materials" className={css.materials}>
             <Container>
                 <div className={`${css.materials__title} ${"title"}`}>Полезные материалы</div>
                 <div className={`${css.materials__descr} ${"text"}`}>В нашем блоге мы собираем и делимся с вами знаниями и опытом в области детского сна, чтобы сделать ваши ночи более спокойными, а дни — радостными. Здесь вы найдете полезные советы, статьи и исследования, которые помогут разобраться в вопросах сна вашего малыша.</div>

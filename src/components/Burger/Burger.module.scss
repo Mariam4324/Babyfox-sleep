@@ -1,9 +1,10 @@
 @import "../../vars.scss";
 
 .burger {
-  display: none;
-  align-items: center;
-  @media (max-width: 900px) {
-    display: flex;
-  }
+    display: none;
+    align-items: center;
+    @media (max-width: 900px) {
+        cursor: pointer;
+        display: flex;
+    }
 }

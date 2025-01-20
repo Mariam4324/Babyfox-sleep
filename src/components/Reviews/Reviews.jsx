@@ -6,7 +6,7 @@ import css from "./Reviews.module.scss";
 
 export const Reviews = () => {
     return (
-        <div className={css.reviews}>
+        <section id="reviews" className={css.reviews}>
             <Container>
                 <Title titleText={"Отзывы"} />
                 <p className={css.reviews__text}>Мы гордимся тем, что наша работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами. Вот что говорят о нас наши клиенты:</p>
@@ -24,6 +24,6 @@ export const Reviews = () => {
                     <Button buttonText={"больше отзывов"} btnBG={"standart"} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} />
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };

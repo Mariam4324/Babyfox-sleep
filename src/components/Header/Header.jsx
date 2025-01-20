@@ -6,17 +6,17 @@ import css from "./Header.module.scss";
 
 export const Header = () => {
     return (
-        <header id="home" className={css.header}>
+        <header className={css.header}>
             <Container>
                 <div className={css.header__wrapper}>
                     <Logo />
 
                     <ul className={css["header-nav"]}>
-                        <Link pathTo={"home"} linkText={"Главная"} />
+                        <Link pathTo={""} linkText={"Главная"} />
                         <Link pathTo={"services"} linkText={"Услуги"} />
                         <Link pathTo={"reviews"} linkText={"Отзывы"} />
-                        <Link pathTo={"education"} linkText={"Обучение"} />
-                        <Link pathTo={"about"} linkText={"О нас"} />
+                        <Link pathTo={"materials"} linkText={"Статьи"} />
+                        <Link pathTo={"footer"} linkText={"Контакты"} />
                     </ul>
 
                     <Burger />
