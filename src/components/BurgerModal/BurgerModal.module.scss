@@ -14,7 +14,7 @@
 
   &__link {
     display: block;
-    padding: 12px 26px;
+    padding: 22px 26px;
     transition: 0.5s all;
     color: #222;
     text-align: left;
@@ -49,4 +49,10 @@
   &__link {
     display: block;
   }
+
+  // &__links {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 20px;
+  // }
 }
