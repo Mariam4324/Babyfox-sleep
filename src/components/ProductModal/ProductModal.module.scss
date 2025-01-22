@@ -33,19 +33,18 @@
     }
 
     &__term {
-        border-radius: 14px;
+        border-radius: 16px;
         min-height: 12px;
-        max-height: 35px;
         padding: 8px;
         width: max-content;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
+        color: #222;
         font-size: 14px;
-        font-weight: 700;
-        background: $pink;
-        letter-spacing: -0.12px;
+        font-weight: 800;
+        background: #ffbaba;
+        letter-spacing: 0.3px;
 
         &_pink {
             background: $pink;
