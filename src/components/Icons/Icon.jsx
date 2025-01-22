@@ -1,5 +1,4 @@
 import css from "./Icons.module.scss";
-
 // size variants: medium, large
 
 export const Icon = ({ iconPath, link, size }) => {
