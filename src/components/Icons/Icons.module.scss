@@ -1,5 +1,13 @@
 .icon {
     cursor: pointer;
-    min-width: 50px;
-    max-width: 70px;
+
+    &__medium {
+        min-width: 50px;
+        max-width: 70px;
+    }
+
+    &__large {
+        min-width: 90px;
+        max-width: 110px;
+    }
 }

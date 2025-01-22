@@ -15,14 +15,14 @@ export const Home = () => {
 
                     <div className={css.home__main}>
                         <h1 className={css.home__title}>Виктория Симонова</h1>
-                        <h2 className={css.home__article}>Основатель Babyfox</h2>
+                        <h2 className={css.home__article}>Основатель Babyfox.sleep</h2>
 
                         <div className={css.home__contacts}>
                             <p className={css.home__subtitle}>Контакты</p>
                             <div className={css.home__icons}>
-                                <Icon iconPath={instIcon} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} />
-                                <Icon iconPath={telegramIcon} link={"https://t.me/babyfox_sleep"} />
-                                <Icon iconPath={whatsappIcon} link={"https://wa.me/79654041234"} />
+                                <Icon iconPath={instIcon} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} size={"large"} />
+                                <Icon iconPath={telegramIcon} link={"https://t.me/babyfox_sleep"} size={"large"} />
+                                <Icon iconPath={whatsappIcon} link={"https://wa.me/79654041234"} size={"large"} />
                             </div>
                         </div>
                     </div>
