@@ -4,16 +4,26 @@ import { Button } from "../Button/Button";
 import css from "./ProductModal.module.scss";
 
 export const ProductModal = ({ how, setModal, modal, type, term, title, price, forWho }) => {
+    const handleBackButton = (event) => {
+        //Close the modal window when the "Back" button is pressed
+        if (modal) {
+            event.preventDefault();
+            setModal(false);
+        }
+    };
+
     useEffect(() => {
         // Lockable scroll when opening a modal window
         if (modal) {
             document.body.style.overflow = "hidden";
+            window.addEventListener("popstate", handleBackButton);
         } else {
             document.body.style.overflow = "unset";
         }
         // Clear the effect when the component is unmounted
         return () => {
-            document.body.style.overflow = "unset";
+            document.body.style.overflow = "unset"; // Reset scrolling
+            window.removeEventListener("popstate", handleBackButton); // Removing the eventListener
         };
     }, [modal]);
 
