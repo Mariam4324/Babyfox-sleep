@@ -1,6 +1,6 @@
 export const ReviewCard = ({ name, date, rating, reviewText }) => {
     return (
-        <div className="max-w-md mx-auto bg-black shadow-lg rounded-lg overflow-hidden">
+        <div className="max-w-md mx-auto bg-red-50 shadow-lg rounded-lg overflow-hidden">
             <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                     <span className="text-lg font-semibold">{name}</span>
