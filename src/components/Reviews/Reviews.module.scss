@@ -27,3 +27,12 @@
         align-items: center;
     }
 }
+
+@media (max-width: 1400px) {
+    .reviews {
+        &__wrapper {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+}
