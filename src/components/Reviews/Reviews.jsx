@@ -7,12 +7,28 @@ import css from "./Reviews.module.scss";
 import { testimonials } from "../../assets/data";
 
 export const Reviews = () => {
-    const settings = {
+    var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1150,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     return (
