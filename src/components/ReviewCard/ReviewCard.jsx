@@ -2,7 +2,7 @@ import { RatingStars } from "../RatingStars/RatingStars";
 
 export const ReviewCard = ({ author, date, rating, reviewText }) => {
     return (
-        <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden m-0 mx-2.5">
+        <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                     <span className="text-lg font-semibold">{author}</span>
