@@ -1,10 +1,20 @@
+import Slider from "react-slick";
 import { Container } from "../../layout/Container/Container";
 import { Button } from "../Button/Button";
 import { ReviewCard } from "../ReviewCard/ReviewCard";
 import { Title } from "../Title/Title";
 import css from "./Reviews.module.scss";
+import { testimonials } from "../../assets/data";
 
 export const Reviews = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+    };
+
     return (
         <section id="reviews" className={css.reviews}>
             <Container>
@@ -12,11 +22,11 @@ export const Reviews = () => {
                 <p className={css.reviews__text}>Мы гордимся тем, что наша работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами. Вот что говорят о нас наши клиенты:</p>
 
                 <div className={css.reviews__wrapper}>
-                    <ReviewCard name={"Ирина"} rating={5} date={"22 янв"} reviewText={"Мы обратились к консультанту по детскому сну, когда наш малыш начал плохо спать и часто просыпался по ночам. Благодаря профессиональному подходу и индивидуальной программе, разработанной для нашего ребенка, уже через две недели мы заметили огромные изменения! Теперь наш сын спит крепко всю ночь, а днем стал более спокойным и радостным. Огромное спасибо за вашу поддержку и советы!"} />
-
-                    <ReviewCard name={"Светлана"} rating={5} date={"14 янв"} reviewText={"Не знал, что проблема со сном может быть решена так быстро и эффективно! Консультант по детскому сну помог нам понять причины беспокойства нашего ребенка и предложил простые, но действенные методы. Теперь наша дочка засыпает без слез и просыпается с улыбкой. Рекомендую всем родителям, кто сталкивается с похожими трудностями!"} />
-
-                    <ReviewCard name={"Елена"} rating={5} date={"5 янв"} reviewText={"Работа с консультантом по детскому сну стала настоящим спасением для нашей семьи! Мы долго мучились с режимом и ночными пробуждениями. Спасибо за терпение и внимание к деталям — каждая рекомендация оказалась очень полезной. Мы не только научились укладывать ребенка спать, но и сами стали чувствовать себя гораздо спокойнее. Рады, что обратились за помощью!"} />
+                    <Slider {...settings}>
+                        {testimonials.map((testimonial) => (
+                            <ReviewCard key={testimonial.id} author={testimonial.author} rating={testimonial.rating} date={testimonial.date} reviewText={testimonial.text} />
+                        ))}
+                    </Slider>
                 </div>
 
                 <div className={css.reviews__btn}>
