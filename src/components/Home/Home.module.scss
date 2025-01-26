@@ -73,7 +73,7 @@
 
         &__title {
             text-align: left;
-            font-size: 40px;
+            font-size: 36px;
             letter-spacing: 0;
             line-height: normal;
         }
@@ -86,4 +86,11 @@
             margin-top: 50px;
         }
     }
+}
+
+@media (max-width: 450px) {
+    .home__title {
+        font-size: 32px;
+    }
+    
 }
