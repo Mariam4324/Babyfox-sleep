@@ -80,3 +80,11 @@ a {
 .slick-arrow {
     padding: 90px 0;
 }
+
+.slick-dots li button:before {
+    font-size: 8px;
+}
+
+.slick-dots li {
+    margin: 0 2px;
+}
