@@ -1,7 +1,7 @@
 .logo {
     display: flex;
-    gap: 7px;
     align-items: center;
+    gap: 7px;
 
     &__icon {
         cursor: pointer;
@@ -10,11 +10,20 @@
         border-radius: 50%;
     }
 
+    &__descr {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__title {
         color: #222;
         font-size: 28px;
         font-weight: 800;
-        line-height: 88px;
+    }
+
+    &__subtitle {
+        margin-top: -5px;
+        font-weight: 500;
     }
 }
 
