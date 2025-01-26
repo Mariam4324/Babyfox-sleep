@@ -12,13 +12,14 @@ export const Reviews = () => {
         infinite: true,
         speed: 400,
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1150,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
