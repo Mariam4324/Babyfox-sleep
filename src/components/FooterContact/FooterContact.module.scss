@@ -1,0 +1,55 @@
+@import "./../../vars.scss";
+
+.footer {
+    &__contact {
+        display: flex;
+        align-items: center;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 11px 11px 12px;
+        background: #2c2c2c;
+        width: 55px;
+        height: 55px;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 24px;
+    }
+
+    &__caption {
+        color: #8c8c8c;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+
+    &__subject {
+        transition: 0.5s all;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+}
+
+.footer__contact__first:hover .footer__subject {
+    color: $primary;
+}
+
+.footer__contact:hover .footer__subject {
+    color: $primary;
+}
+
+@media (max-width: 1300px) {
+    .footer__subject {
+        font-size: 14px;
+    }
+}

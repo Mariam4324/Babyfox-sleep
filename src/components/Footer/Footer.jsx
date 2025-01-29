@@ -3,8 +3,9 @@ import css from "./Footer.module.scss";
 import telegramIcon from "./../../assets/telegram.svg";
 import whatsappIcon from "./../../assets/whatsApp.svg";
 import founderIcon from "./../../assets/home_pic.jpg";
-import supportIcon from "./../../assets/support_icon.png"
+import supportIcon from "./../../assets/support_icon.png";
 import { Icon } from "../Icons/Icon";
+import { FooterContact } from "../FooterContact/FooterContact";
 
 export const Footer = () => {
     return (
@@ -21,36 +22,11 @@ export const Footer = () => {
                 <hr className={css.footer__line}></hr>
                 <div className={css.footer__group}>
                     <div className={css.footer__contacts__aside}>
-                        <a className={`${css.footer__contact} ${css.footer__contact} ${css.footer_m}`} href="https://t.me/babyfox_sleep">
-                            <div className={css.footer__box}>
-                                {/* <img className={css.footer__icon} src={telegram} alt="telegram"></img> */}
-                                <Icon iconPath={telegramIcon} size={"medium"} />
-                            </div>
-                            <div className={css.footer__descr}>
-                                <div className={css.footer__caption}>telegram</div>
-                                <div className={css.footer__subject}>@babyfox_sleep</div>
-                            </div>
-                        </a>
+                        <FooterContact link={"https://t.me/babyfox_sleep"} icon={telegramIcon} iconSize={"medium"} title={"Telegram"} subtitle={"@babyfox_sleep"} />
 
-                        <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="https://wa.me/79654041234">
-                            <div className={css.footer__box}>
-                                <Icon iconPath={whatsappIcon} size={"medium"} />
-                            </div>
-                            <div className={css.footer__descr}>
-                                <div className={css.footer__caption}>WhatsApp</div>
-                                <div className={css.footer__subject}>+7 965 404 12 34</div>
-                            </div>
-                        </a>
+                        <FooterContact link={"https://wa.me/79654041234"} icon={whatsappIcon} iconSize={"medium"} title={"WhatsApp"} subtitle={"+7 965 404 12 34"} />
 
-                        <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="https://t.me/m/AuElmiscYWMy">
-                            <div className={css.footer__box}>
-                                <Icon iconPath={supportIcon} size={"small"} />
-                            </div>
-                            <div className={css.footer__descr}>
-                                <div className={css.footer__caption}>Технический отдел</div>
-                                <div className={css.footer__subject}>Проблемы с сайтом?</div>
-                            </div>
-                        </a>
+                        <FooterContact link={"https://t.me/m/AuElmiscYWMy"} icon={supportIcon} iconSize={"small"} title={"Технический отдел"} subtitle={"Проблемы с сайтом?"} />
                     </div>
 
                     <div className={css.footer__lawyer}>
