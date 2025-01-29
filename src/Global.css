@@ -89,9 +89,3 @@ a {
     margin: 0 2px;
 }
 
-.slick-next:before,
-.slick-prev:before {
-    font-size: 30px;
-    opacity: 0.75;
-    color: #ffe8ba;
-}
