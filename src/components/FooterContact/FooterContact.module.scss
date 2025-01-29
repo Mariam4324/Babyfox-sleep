@@ -4,6 +4,7 @@
     &__contact {
         display: flex;
         align-items: center;
+        gap: 24px;
     }
 
     &__box {
@@ -19,8 +20,7 @@
     &__descr {
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        margin-left: 24px;
+        gap: 3px;
     }
 
     &__caption {
