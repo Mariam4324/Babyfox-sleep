@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { AnimatedCross } from "../AnimatedCross/AnimatedCross";
-import { Button } from "../Button/Button";
 import css from "./ProductModal.module.scss";
+import { ThemeContext } from "../../Providers/ThemeProvider";
+import { ProductModalBtn } from "../ProductModalBtn/ProductModalBtn";
 
 export const ProductModal = ({ how, setModal, modal, type, term, title, price, forWho }) => {
     const handleBackButton = (event) => {
@@ -27,14 +28,16 @@ export const ProductModal = ({ how, setModal, modal, type, term, title, price, f
         };
     }, [modal]);
 
+    const { darkMode } = useContext(ThemeContext);
+
     return (
-        <div className={css.modal}>
+        <div className={`${css.modal}  ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
             <div className={css.modal__top}>
                 <AnimatedCross setModal={setModal} />
-                <div className={`${css.modal__term} ${css[`modal__term_${type}`]}`}>{term}</div>
+                <div className={`${css.modal__term} ${css[`modal__term_${type}`]} text-white dark:text-black`}>{term}</div>
             </div>
 
-            <h2 className={css.modal__name}>{title}</h2>
+            <h2 className={`${css.modal__name} text-black dark:text-white`}>{title}</h2>
 
             <div className={`${css["modal-wrapper"]} ${css[`modal-wrapper_${type}`]}`}>
                 <span className={css["modal-wrapper__label"]}>Для кого?</span>
@@ -47,8 +50,8 @@ export const ProductModal = ({ how, setModal, modal, type, term, title, price, f
             </div>
 
             <div className={css.modal__bottom}>
-                <span className={css.modal__price}>{price}</span>
-                <Button buttonText={"Перейти"} btnBG={type} link={"https://t.me/babyfox_sleep"} />
+                <span className={`${css.modal__price} text-black dark:text-white`}>{price}</span>
+                <ProductModalBtn buttonText="Перейти" btnBG={type} link="https://t.me/babyfox_sleep" />
             </div>
         </div>
     );

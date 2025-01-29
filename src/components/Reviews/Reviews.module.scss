@@ -19,27 +19,9 @@
     }
 
     &__btn {
-        margin-top: 48px;
+        margin-top: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 }
-
-// @media (max-width: 1400px) {
-//     .reviews {
-//         &__wrapper {
-//             display: grid;
-//             gap: 20px;
-//             grid-template-columns: repeat(auto-fill, minmax(448px, 1fr));
-//             -ms-overflow-style: none;
-//             scrollbar-width: none;
-//         }
-//     }
-// }
-
-// @media (max-width: 500px) {
-//     .reviews__wrapper {
-//         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-//     }
-// }

@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer/Footer";
 import { Breadcrumbs } from "../components/Breadcrumbs/Breadcrumbs";
 import { Education } from "../pages/Education/Education";
 import { NotFound } from "../pages/NotFound/NotFound";
+import { ProductModalBtn } from "../components/ProductModalBtn/ProductModalBtn";
 
 export const router = createBrowserRouter([
     {

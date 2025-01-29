@@ -5,10 +5,12 @@ import { ReviewCard } from "../ReviewCard/ReviewCard";
 import { Title } from "../Title/Title";
 import css from "./Reviews.module.scss";
 import { testimonials } from "../../assets/data";
+import { useContext } from "react";
+import { ThemeContext } from "../../Providers/ThemeProvider";
 
 export const Reviews = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 400,
         slidesToShow: 3,
@@ -32,11 +34,13 @@ export const Reviews = () => {
         ],
     };
 
+    const { darkMode } = useContext(ThemeContext);
+
     return (
-        <section id="reviews" className={css.reviews}>
+        <section id="reviews" className={`${css.reviews} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
             <Container>
                 <Title titleText={"Что о нас говорят клиенты"} />
-                <p className={css.reviews__text}>Мы гордимся тем, что наша работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами. Вот что говорят о нас наши клиенты:</p>
+                <p className={`${css.reviews__text} text-black dark:text-white`}>Мы гордимся тем, что наша работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами. Вот что говорят о нас наши клиенты:</p>
 
                 <div className={css.reviews__wrapper}>
                     <Slider {...settings}>

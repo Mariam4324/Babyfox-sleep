@@ -4,15 +4,19 @@ import { Title } from "../Title/Title";
 import { servicesData } from "../../assets/data.js";
 import css from "./Services.module.scss";
 import { Button } from "../Button/Button.jsx";
+import { useContext } from "react";
+import { ThemeContext } from "../../Providers/ThemeProvider.jsx";
 
 export const Services = () => {
+    const { darkMode } = useContext(ThemeContext);
+
     return (
         <section id="services">
-            <div className={css.services}>
+            <div className={`${css.services} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
                 <Container>
                     <Title titleText={"Услуги"} />
 
-                    <p className={css.services__subtitle}>Мы предлагаем широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и наши программы адаптируются под индивидуальные потребности.</p>
+                    <p className={`${css.services__subtitle} text-black dark:text-white`}>Мы предлагаем широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и наши программы адаптируются под индивидуальные потребности.</p>
 
                     <div className={css.services__wrapper}>
                         {servicesData.map((product, index) => {

@@ -9,10 +9,10 @@
 .inner {
   width: inherit;
   text-align: center;
+  position: relative;
 }
 
 label {
-  color: #fff;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: -0.12px;
@@ -23,23 +23,22 @@ label {
   cursor: pointer;
 }
 
-.inner:before,
-.inner:after {
+.crossline {
   position: absolute;
   content: "";
   height: 1px;
   width: inherit;
-  background: #222;
+  background: black; 
   left: 0;
   transition: 0.3s all;
 }
 
-.inner:before {
+.crosslinebefore {
   top: 50%;
   transform: rotate(45deg);
 }
 
-.inner:after {
+.crosslineafter {
   bottom: 50%;
   transform: rotate(-45deg);
 }
@@ -48,15 +47,17 @@ label {
   opacity: 1;
 }
 
-.outer:hover .inner:before,
-.outer:hover .inner:after {
+.outer:hover .crosslinebefore,
+.outer:hover .crosslineafter {
   transform: rotate(0);
 }
 
-.outer:hover .inner:before {
+.outer:hover .crosslinebefore {
   top: 0;
 }
 
-.outer:hover .inner:after {
+.outer:hover .crosslineafter {
   bottom: 0;
 }
+
+
