@@ -1,4 +1,4 @@
-import css from "./animatedcross.module.scss";
+import css from "./AnimatedCross.module.scss"
 
 export const AnimatedCross = ({ setModal }) => {
     return (
