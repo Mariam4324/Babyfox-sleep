@@ -1,8 +1,9 @@
 import { Container } from "../../layout/Container/Container";
 import css from "./Footer.module.scss";
-import telegram from "./../../assets/telegram.svg";
-import whatsapp from "./../../assets/whatsApp.svg";
-import founder from "./../../assets/home_pic.jpg";
+import telegramIcon from "./../../assets/telegram.svg";
+import whatsappIcon from "./../../assets/whatsApp.svg";
+import founderIcon from "./../../assets/home_pic.jpg";
+import supportIcon from "./../../assets/support_icon.png"
 import { Icon } from "../Icons/Icon";
 
 export const Footer = () => {
@@ -23,7 +24,7 @@ export const Footer = () => {
                         <a className={`${css.footer__contact} ${css.footer__contact} ${css.footer_m}`} href="https://t.me/babyfox_sleep">
                             <div className={css.footer__box}>
                                 {/* <img className={css.footer__icon} src={telegram} alt="telegram"></img> */}
-                                <Icon iconPath={telegram} size={"medium"} />
+                                <Icon iconPath={telegramIcon} size={"medium"} />
                             </div>
                             <div className={css.footer__descr}>
                                 <div className={css.footer__caption}>telegram</div>
@@ -33,18 +34,28 @@ export const Footer = () => {
 
                         <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="https://wa.me/79654041234">
                             <div className={css.footer__box}>
-                                <Icon iconPath={whatsapp} size={"medium"} />
+                                <Icon iconPath={whatsappIcon} size={"medium"} />
                             </div>
                             <div className={css.footer__descr}>
                                 <div className={css.footer__caption}>WhatsApp</div>
                                 <div className={css.footer__subject}>+7 965 404 12 34</div>
                             </div>
                         </a>
+
+                        <a className={`${css.footer__contact} ${css.footer__contact__flex}`} href="https://t.me/m/AuElmiscYWMy">
+                            <div className={css.footer__box}>
+                                <Icon iconPath={supportIcon} size={"small"} />
+                            </div>
+                            <div className={css.footer__descr}>
+                                <div className={css.footer__caption}>Технический отдел</div>
+                                <div className={css.footer__subject}>Проблемы с сайтом?</div>
+                            </div>
+                        </a>
                     </div>
 
                     <div className={css.footer__lawyer}>
                         <div className={css.footer__contacts}>
-                            <img className={css.footer__img} src={founder} alt="основатель babyfox"></img>
+                            <img className={css.footer__img} src={founderIcon} alt="основатель babyfox"></img>
 
                             <div className={css.footer__descr}>
                                 <div className={`${css.footer__name} ${["title-extra"]}`}>Виктория Симонова</div>
