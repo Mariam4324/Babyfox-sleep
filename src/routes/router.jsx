@@ -8,7 +8,9 @@ import { Footer } from "../components/Footer/Footer";
 import { Breadcrumbs } from "../components/Breadcrumbs/Breadcrumbs";
 import { Education } from "../pages/Education/Education";
 import { NotFound } from "../pages/NotFound/NotFound";
-import { ProductModalBtn } from "../components/ProductModalBtn/ProductModalBtn";
+import Login from "../components/Login/Login";
+import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
+import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +28,26 @@ export const router = createBrowserRouter([
     },
 
     {
+        path: "/login",
+        element: (
+            <>
+                <Login />
+                <ThemeToggle />
+            </>
+        ),
+    },
+
+    {
+        path: "/register",
+        element: (
+            <>
+                <RegistrationForm />
+                <ThemeToggle />
+            </>
+        ),
+    },
+
+    {
         path: "education",
         element: (
             <>
@@ -34,6 +56,7 @@ export const router = createBrowserRouter([
             </>
         ),
     },
+ 
 
     {
         path: "*",

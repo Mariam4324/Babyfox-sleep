@@ -3,8 +3,10 @@
 .burger {
     display: none;
     align-items: center;
+
     @media (max-width: 900px) {
         cursor: pointer;
         display: flex;
+        justify-content: end;
     }
 }
