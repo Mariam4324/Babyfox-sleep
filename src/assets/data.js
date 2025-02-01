@@ -128,7 +128,7 @@ export const servicesData = [
     },
 
     {
-        title: "Сопровождение по самозасыпанию",
+        title: "Сопровождение",
         price: "7000₽",
         term: "месяц",
         icon: childPhoto4,
@@ -139,7 +139,7 @@ export const servicesData = [
     },
 
     {
-        title: "Сопровождение по самозасыпанию",
+        title: "Сопровождение",
         price: "6500₽",
         term: "3 недели",
         icon: childPhoto5,
@@ -150,7 +150,7 @@ export const servicesData = [
     },
 
     {
-        title: "Сопровождение по самозасыпанию",
+        title: "Сопровождение",
         price: "6000₽",
         term: "2 недели",
         icon: childPhoto6,
@@ -161,7 +161,7 @@ export const servicesData = [
     },
 
     {
-        title: "Сопровождение по самозасыпанию",
+        title: "Сопровождение",
         price: "5000₽",
         term: "неделя",
         icon: childPhoto7,
