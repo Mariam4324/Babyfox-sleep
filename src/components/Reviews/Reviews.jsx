@@ -40,7 +40,7 @@ export const Reviews = () => {
         <section id="reviews" className={`${css.reviews} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
             <Container>
                 <Title titleText={"Что о нас говорят клиенты"} />
-                <p className={`${css.reviews__text} text-black dark:text-white`}>Мы гордимся тем, что наша работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами. Вот что говорят о нас наши клиенты:</p>
+                <p className={`${css.reviews__text} text-black dark:text-white`}>Я горжусь тем, что моя работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами.</p>
 
                 <div className={css.reviews__wrapper}>
                     <Slider {...settings}>

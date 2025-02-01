@@ -1,5 +1,5 @@
 import css from "./Home.module.scss";
-import photo from "../../assets/home_pic.jpg";
+import homePhoto from "./../../assets/home_pic.webp";
 import { Container } from "../../layout/Container/Container";
 import { Icon } from "../Icons/Icon";
 import instIcon from "../../assets/inst.svg";
@@ -16,7 +16,7 @@ export const Home = () => {
         <main className={`${css.home} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
             <Container>
                 <div className={css.home__wrapper}>
-                    <img className={css.home__photo} src={photo} alt="Виктория Симонова" />
+                    <img className={css.home__photo} src={homePhoto} alt="Виктория Симонова" />
                     <div className={css.home__main}>
                         <h1 className={`${css.home__title} text-black dark:text-white`}>Виктория Симонова</h1>
                         <h2 className={`${css.home__article} text-black dark:text-white`}>Основатель Babyfox.sleep</h2>

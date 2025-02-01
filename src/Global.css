@@ -92,3 +92,16 @@ a {
 .slick-dots li {
     margin: 0 2px;
 }
+
+.text-error {
+    margin-top: 5px !important;
+    color: red !important;
+    font-weight: 600 !important;
+}
+
+.login__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

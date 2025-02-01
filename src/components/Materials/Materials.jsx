@@ -15,7 +15,7 @@ export const Materials = () => {
         <section id="materials" className={`${css.materials} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
             <Container>
                 <div className={`${css.materials__title} ${"title"} text-black dark:text-white`}>Полезные материалы</div>
-                <div className={`${css.materials__descr} ${"text"} text-black dark:text-white`}>В нашем блоге мы собираем и делимся с вами знаниями и опытом в области детского сна, чтобы сделать ваши ночи более спокойными, а дни — радостными. Здесь вы найдете полезные советы, статьи и исследования, которые помогут разобраться в вопросах сна вашего малыша.</div>
+                <div className={`${css.materials__descr} ${"text"} text-black dark:text-white`}>В своем блоге я делюсь полезной информацией о детском сне, чтобы сделать ваши ночи более спокойными, а дни — радостными. Здесь вы найдете полезные советы, статьи и исследования, которые помогут разобраться в вопросах сна вашего малыша.</div>
 
                 <div className={css.materials__cards}>
                     <a href="https://www.specialmagazine.ru/stil-zhizni/viktoriya-simonova/">

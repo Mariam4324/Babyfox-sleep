@@ -16,7 +16,7 @@ export const Services = () => {
                 <Container>
                     <Title titleText={"Услуги"} />
 
-                    <p className={`${css.services__subtitle} text-black dark:text-white`}>Мы предлагаем широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и наши программы адаптируются под индивидуальные потребности.</p>
+                    <p className={`${css.services__subtitle} text-black dark:text-white`}>Я предлагаю широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и мои программы адаптируются под индивидуальные потребности</p>
 
                     <div className={css.services__wrapper}>
                         {servicesData.map((product, index) => {

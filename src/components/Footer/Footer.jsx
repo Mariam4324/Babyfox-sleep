@@ -2,7 +2,7 @@ import { Container } from "../../layout/Container/Container";
 import css from "./Footer.module.scss";
 import telegramIcon from "./../../assets/telegram.svg";
 import whatsappIcon from "./../../assets/whatsApp.svg";
-import founderIcon from "./../../assets/home_pic.jpg";
+import founderIcon from "./../../assets/home_pic.webp";
 import supportIcon from "./../../assets/support_icon.png";
 import { FooterContact } from "../FooterContact/FooterContact";
 
@@ -36,7 +36,7 @@ export const Footer = () => {
                             </div>
                         </div>
 
-                        <div className={`${css.footer__post_name} text`}>Мы ценим мнение наших клиентов и открыты для предложений по улучшению наших услуг. Ваши отзывы помогают нам расти и улучшать качество консультаций. Пожалуйста, оставляйте комментарии и делитесь своим опытом, это поможет другим родителям найти ответы на волнующие их вопросы.</div>
+                        <div className={`${css.footer__post_name} text`}>Я ценю мнение наших клиентов и открыта для предложений по улучшению моих услуг. Ваши отзывы помогают мне расти и улучшать качество консультаций. Пожалуйста, оставляйте комментарии и делитесь своим опытом, это поможет другим родителям найти ответы на волнующие их вопросы.</div>
                     </div>
                 </div>
             </Container>

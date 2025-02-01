@@ -3,7 +3,6 @@ import { ThemeContext } from "../../Providers/ThemeProvider";
 
 export const ThemeToggle = () => {
     const { darkMode, toggleTheme } = useContext(ThemeContext);
-    console.log(darkMode, toggleTheme);
 
     useEffect(() => {
         if (darkMode) {
