@@ -77,6 +77,11 @@ a {
     text-align: center;
 }
 
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
 .slick-slide > div {
     margin: 0 10px 10px 10px;
 }

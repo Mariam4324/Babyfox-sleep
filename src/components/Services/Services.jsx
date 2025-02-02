@@ -1,11 +1,11 @@
 import { Container } from "../../layout/Container/Container";
-import { Card } from "../Card/Card";
 import { Title } from "../Title/Title";
 import { servicesData } from "../../assets/data.js";
 import css from "./Services.module.scss";
 import { Button } from "../Button/Button.jsx";
 import { useContext } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider.jsx";
+import { ProductCard } from "../ProductCard/ProductCard.jsx";
 
 export const Services = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -22,7 +22,7 @@ export const Services = () => {
                         {servicesData.map((product, index) => {
                             const uniqueKey = `item-${index}-${new Date().getTime()}`;
 
-                            return <Card key={uniqueKey} how={product.how} forWho={product.for} type={product.type} photoPath={product.icon} term={product.term} title={product.title} price={product.price} />;
+                            return <ProductCard key={uniqueKey} how={product.how} forWho={product.for} type={product.type} photoPath={product.icon} term={product.term} title={product.title} price={product.price} />;
                         })}
                     </div>
 
