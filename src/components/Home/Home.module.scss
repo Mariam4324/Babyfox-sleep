@@ -4,7 +4,7 @@
     padding: $sectionPadding;
 
     &__photo {
-        max-width: 650px;
+        max-width: 500px;
         width: 100%;
         border-radius: 14px;
         object-fit: cover;
@@ -14,13 +14,19 @@
     }
 
     &__wrapper {
+        margin: 0 auto;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 60px;
     }
 
+    &__info {
+        text-align: left;
+        max-width: 500px;
+    }
+
     &__title {
-        max-width: 526px;
         font-size: 70px;
         font-weight: 700;
         line-height: 88px;
@@ -66,13 +72,22 @@
         }
     }
 }
-@media (max-width: 700px) {
+
+@media (max-width: 900px) {
     .home {
         &__wrapper {
             flex-wrap: wrap;
             gap: 20px;
         }
 
+        &__contacts {
+            margin-top: 28px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .home {
         &__title {
             text-align: left;
             font-size: 36px;
@@ -82,10 +97,6 @@
 
         &__article {
             text-align: left;
-        }
-
-        &__contacts {
-            margin-top: 28px;
         }
     }
 }

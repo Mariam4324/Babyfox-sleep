@@ -17,7 +17,7 @@ export const Home = () => {
             <Container>
                 <div className={css.home__wrapper}>
                     <img className={css.home__photo} src={homePhoto} alt="Виктория Симонова" />
-                    <div className={css.home__main}>
+                    <div className={css.home__info}>
                         <h1 className={`${css.home__title} text-black dark:text-white`}>Виктория Симонова</h1>
                         <h2 className={`${css.home__article} text-black dark:text-white`}>Основатель Babyfox.sleep</h2>
                         <div className={css.home__contacts}>
