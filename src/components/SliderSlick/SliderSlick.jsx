@@ -2,7 +2,7 @@ import Slider from "react-slick";
 
 export const SliderSlick = ({ children }) => {
     const settings = {
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 400,
         slidesToShow: 3,
