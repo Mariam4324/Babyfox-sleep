@@ -11,6 +11,7 @@ import { NotFound } from "../pages/NotFound/NotFound";
 import Login from "../components/Login/Login";
 import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
 import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
+import { Articles } from "../pages/Articles/Articles";
 
 export const router = createBrowserRouter([
     {
@@ -56,7 +57,11 @@ export const router = createBrowserRouter([
             </>
         ),
     },
- 
+
+    {
+        path: "articles",
+        element: <Articles />,
+    },
 
     {
         path: "*",
