@@ -2,7 +2,9 @@ import css from "./Button.module.scss";
 
 export const Button = ({ buttonText, btnBG, link }) => {
     const handleClick = () => {
-        window.location.href = link;
+        if (link) {
+            window.location.href = link;
+        }
     };
 
     return (

@@ -26,7 +26,7 @@ export const Materials = () => {
                 </div>
 
                 <Link to="/articles" className={css.materials__btn}>
-                    <Button buttonText="Больше статей" btnBG="standart" />
+                    <Button buttonText="Больше статей" btnBG="standart" link={null} />
                 </Link>
             </Container>
         </section>

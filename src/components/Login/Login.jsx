@@ -1,9 +1,14 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginSchema } from "./../../validationSchemas/loginSchema.js";
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleRegisterNavigate = () => {
+        navigate("/registration")
+    }
     const {
         register,
         handleSubmit,
@@ -58,9 +63,9 @@ const Login = () => {
 
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Ещё нет аккаунта?
-                            <Link to="register" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
+                            <button onClick={handleRegisterNavigate} className="font-medium text-primary-600 hover:underline dark:text-primary-500">
                                 Зарегистрироваться
-                            </Link>
+                            </button>
                         </p>
                     </form>
                 </div>
