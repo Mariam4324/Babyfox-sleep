@@ -7,8 +7,8 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleRegisterNavigate = () => {
-        navigate("/registration")
-    }
+        navigate("/registration");
+    };
     const {
         register,
         handleSubmit,
@@ -38,14 +38,14 @@ const Login = () => {
 
     return (
         <section className="login__wrapper px-[15px] py-0 bg-gray-50 dark:bg-gray-900">
-            <div className="max-w-[600px] w-full bg-white rounded-lg shadow dark:border md:mt-0 dark:bg-gray-800 dark:border-gray-700 mx-auto md:h-screen lg:py-0">
+            <div className="max-w-[600px] w-full bg-white rounded-lg  shadow dark:border md:mt-0 dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">Вход в личный кабинет</h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-6" action="#" noValidate>
                         <input {...register("email")} className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
                         {errors.email && <p className="text-error">{errors.email.message}</p>}
 
-                        <input {...register("password")} autoComplete="current-password" type="password" placeholder="Пароль" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                        <input {...register("password")} type="password" name="password" id="password" placeholder="Пароль" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
                         {errors.password && <p className="text-error">{errors.password?.message}</p>}
 
                         <div className="flex items-center justify-between">
