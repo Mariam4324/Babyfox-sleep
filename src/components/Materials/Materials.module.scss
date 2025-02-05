@@ -39,6 +39,13 @@
         background: #fff;
         color: #4f8ff0;
     }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin: 55px auto 0;
+
+    }
 }
 
 @media (max-width: 1300px) {

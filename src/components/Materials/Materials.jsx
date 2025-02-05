@@ -5,6 +5,8 @@ import { ThemeContext } from "../../Providers/ThemeProvider";
 import { MaterialsCard } from "../MaterialsCard/MaterialsCard";
 import { articles } from "../../assets/data";
 import { SliderSlick } from "../SliderSlick/SliderSlick";
+import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 export const Materials = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -22,6 +24,10 @@ export const Materials = () => {
                         ))}
                     </SliderSlick>
                 </div>
+
+                <Link to="/articles" className={css.materials__btn}>
+                    <Button buttonText="Больше статей" btnBG="standart" />
+                </Link>
             </Container>
         </section>
     );
