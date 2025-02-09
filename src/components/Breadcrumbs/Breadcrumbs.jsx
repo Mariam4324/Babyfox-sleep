@@ -27,11 +27,11 @@ export const Breadcrumbs = () => {
                         <li key={to} className="flex items-center gap-2">
                                 {lastPath ? (
                                     <>
-                                        <div className="text-gray-500 w-max-content">/</div>
-                                        <span className="text-gray-500">{currentPath}</span>
+                                        <div className="text-gray-500 font-bold w-max-content">/</div>
+                                        <span className="text-gray-500 font-bold">{currentPath}</span>
                                     </>
                                 ) : (
-                                    <Link to={to} className="hover:text-orange-500">
+                                    <Link to={to} className="text-gray-500 font-semibold hover:text-orange-500">
                                         {currentPath}
                                     </Link>
                                 )}
