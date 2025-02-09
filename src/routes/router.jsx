@@ -8,10 +8,10 @@ import { Footer } from "../components/Footer/Footer";
 import { Breadcrumbs } from "../components/Breadcrumbs/Breadcrumbs";
 import { Education } from "../pages/Education/Education";
 import { NotFound } from "../pages/NotFound/NotFound";
-import Login from "../components/Login/Login";
 import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
 import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
 import { Articles } from "../pages/Articles/Articles";
+import LoginForm from "../components/LoginForm/LoginForm";
 
 export const router = createBrowserRouter([
     {
@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
         path: "login",
         element: (
             <>
-                <Login />
+                <LoginForm />
                 <ThemeToggle />
             </>
         ),
