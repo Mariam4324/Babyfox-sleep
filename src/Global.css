@@ -114,10 +114,3 @@ a {
     color: red !important;
     font-weight: 600 !important;
 }
-
-.login__wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

@@ -12,7 +12,6 @@ import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
 import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
 import { Articles } from "../pages/Articles/Articles";
 import LoginForm from "../components/LoginForm/LoginForm";
-import { Logo } from "../components/Logo/Logo";
 
 export const router = createBrowserRouter([
     {

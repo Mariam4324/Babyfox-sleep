@@ -204,3 +204,7 @@ export const articles = [
         img: materialPicture3,
     },
 ];
+
+const intervalID = setInterval((name) => console.log(name), 1000, "Interval");
+
+setTimeout(() => clearInterval(intervalID), 10000);
