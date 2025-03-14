@@ -14,6 +14,7 @@ export const Home = () => {
 
     return (
         <main className={`${css.home} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
+            <h1 className="text-error">!!!сайт находится в стадии внутренней доработки которая пока никак не повлияет на видимый функционал, происходит подготовка к видимым результамам за кулисами!!!</h1>
             <Container>
                 <div className={css.home__wrapper}>
                     <img className={css.home__photo} src={homePhoto} alt="Виктория Симонова" />
