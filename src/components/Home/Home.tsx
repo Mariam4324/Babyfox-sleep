@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./Home.module.scss";
 import homePhoto from "./../../assets/home_pic.webp";
 import { Container } from "../../layout/Container/Container";

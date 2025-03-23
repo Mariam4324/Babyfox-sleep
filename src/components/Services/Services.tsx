@@ -1,11 +1,12 @@
-import { Container } from "../../layout/Container/Container";
-import { Title } from "../Title/Title";
+import React from "react";
+import { Container } from "../../layout/Container/Container.jsx";
+import { Title } from "../Title/Title.jsx";
 import { servicesData } from "../../assets/data.js";
 import css from "./Services.module.scss";
 import { Button } from "../Button/Button.jsx";
 import { useContext } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider.jsx";
-import { ProductCard } from "../ProductCard/ProductCard.jsx";
+import { ProductCard } from "../ProductCard/ProductCard.js";
 
 export const Services = () => {
     const { darkMode } = useContext(ThemeContext);

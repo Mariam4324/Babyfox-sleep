@@ -1,9 +1,21 @@
+import React from "react";
 import { useState } from "react";
 import { ProductModal } from "../ProductModal/ProductModal";
 import css from "./ProductCard.module.scss";
 
-export const ProductCard = ({ photoPath, type, term, title, price, forWho, how }) => {
+interface ProductCardProps {
+    photoPath: string;
+    type: string;
+    term: string;
+    title: string;
+    price: string;
+    forWho: string;
+    how: string[];
+}
+
+export const ProductCard = ({ photoPath, type, term, title, price, forWho, how }: ProductCardProps) => {
     const [modal, setModal] = useState(false);
+
 
     return (
         <>

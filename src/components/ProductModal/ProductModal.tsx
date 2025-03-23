@@ -1,10 +1,22 @@
+import React from "react";
 import { useContext, useEffect } from "react";
 import { AnimatedCross } from "../AnimatedCross/AnimatedCross";
 import css from "./ProductModal.module.scss";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { ProductModalBtn } from "../ProductModalBtn/ProductModalBtn";
 
-export const ProductModal = ({ how, setModal, modal, type, term, title, price, forWho }) => {
+interface ProductModalProps {
+    how: string[];
+    setModal: () => void;
+    modal: boolean;
+    type: string;
+    term: string;
+    title: string;
+    price: string;
+    forWho: string;
+}
+
+export const ProductModal = ({ how, setModal, modal, type, term, title, price, forWho }: ProductModalProps) => {
     const handleBackButton = (event) => {
         //Close the modal window when the "Back" button is pressed
         if (modal) {

@@ -1,7 +1,15 @@
+import React from 'react'
 import css from "./MaterialsCard.module.scss";
 
+interface MaterialsCardProps {
+    title: string;
+    date: string;
+    text: string;
+    link: string;
+    picture: string;
+}
 
-export const MaterialsCard = ({ title, date, text, link, picture }) => {
+export const MaterialsCard = ({ title, date, text, link, picture }: MaterialsCardProps) => {
     return (
         <a href={link}>
             <div className={`${css.materials__card}`}>

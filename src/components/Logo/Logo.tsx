@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./Logo.module.scss";
 import logoIcon from "../../assets/header_logo.webp";
 
