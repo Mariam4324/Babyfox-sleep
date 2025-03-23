@@ -205,6 +205,3 @@ export const articles = [
     },
 ];
 
-const intervalID = setInterval((name) => console.log(name), 1000, "Interval");
-
-setTimeout(() => clearInterval(intervalID), 10000);
