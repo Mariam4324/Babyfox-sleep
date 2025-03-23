@@ -9,7 +9,7 @@ interface LinkComponentProps {
 export const LinkComponent = ({ linkText, pathTo }: LinkComponentProps) => {
     return (
         <li>
-            <a href={`#${pathTo}`} className={`${css.link} text-black dark:text-white`}>
+            <a href={`${pathTo}`} className={`${css.link} text-black dark:text-white`}>
                 {linkText}
             </a>
         </li>

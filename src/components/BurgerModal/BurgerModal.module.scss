@@ -14,7 +14,7 @@
 
   &__link {
     display: block;
-    padding: 22px 26px;
+    padding: 18px 26px;
     transition: 0.5s all;
     color: #222;
     text-align: left;
@@ -42,9 +42,9 @@
     padding: 38px 0;
   }
 
-  &__link:not(:first-child) {
-    margin-top: 16px;
-  }
+  // &__link:not(:first-child) {
+  //   margin-top: 16px;
+  // }
 
   &__link {
     display: block;

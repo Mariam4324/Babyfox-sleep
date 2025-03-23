@@ -1,4 +1,5 @@
 import css from "./BurgerModal.module.scss";
+import { LinkComponent } from "./../LinkComponent/LinkComponent";
 
 export const BurgerModal = ({ setBurger }) => {
     return (
@@ -8,30 +9,24 @@ export const BurgerModal = ({ setBurger }) => {
             </svg>
 
             <ul>
-                <li onClick={() => setBurger(false)}>
-                    <a className={`${css.burger__link} text-black dark:text-white`} href="#">
-                        Главная
-                    </a>
+                <li className={css.burger__link} onClick={() => setBurger(false)}>
+                    <LinkComponent linkText="Главная" pathTo="#" />
                 </li>
-                <li onClick={() => setBurger(false)}>
-                    <a className={`${css.burger__link} text-black dark:text-white`} href="#services">
-                        Услуги
-                    </a>
+
+                <li className={css.burger__link} onClick={() => setBurger(false)}>
+                    <LinkComponent linkText="Услуги" pathTo="#services" />
                 </li>
-                <li onClick={() => setBurger(false)}>
-                    <a className={`${css.burger__link} text-black dark:text-white`} href="#reviews">
-                        Отзывы
-                    </a>
+
+                <li className={css.burger__link} onClick={() => setBurger(false)}>
+                    <LinkComponent linkText="Отзывы" pathTo="#reviews" />
                 </li>
-                <li onClick={() => setBurger(false)}>
-                    <a className={`${css.burger__link} text-black dark:text-white`} href="#materials">
-                        Статьи
-                    </a>
+
+                <li className={css.burger__link} onClick={() => setBurger(false)}>
+                    <LinkComponent linkText="Статьи" pathTo="#materials" />
                 </li>
-                <li onClick={() => setBurger(false)}>
-                    <a className={`${css.burger__link} text-black dark:text-white`} href="#footer">
-                        Контакты
-                    </a>
+
+                <li className={css.burger__link} onClick={() => setBurger(false)}>
+                    <LinkComponent linkText="Контакты" pathTo="#footer" />
                 </li>
             </ul>
         </div>

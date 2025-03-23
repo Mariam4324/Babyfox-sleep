@@ -21,11 +21,11 @@ export const Header = () => {
 
                 <div className={css.header__bottom}>
                     <ul className={css["header-nav"]}>
-                        <LinkComponent pathTo={""} linkText={"Главная"} />
-                        <LinkComponent pathTo={"services"} linkText={"Услуги"} />
-                        <LinkComponent pathTo={"reviews"} linkText={"Отзывы"} />
-                        <LinkComponent pathTo={"materials"} linkText={"Статьи"} />
-                        <LinkComponent pathTo={"footer"} linkText={"Контакты"} />
+                        <LinkComponent pathTo={"#"} linkText={"Главная"} />
+                        <LinkComponent pathTo={"#services"} linkText={"Услуги"} />
+                        <LinkComponent pathTo={"#reviews"} linkText={"Отзывы"} />
+                        <LinkComponent pathTo={"#materials"} linkText={"Статьи"} />
+                        <LinkComponent pathTo={"#footer"} linkText={"Контакты"} />
                     </ul>
 
                     <Burger />
