@@ -1,3 +1,4 @@
+import React from "react";
 import { Icon } from "../Icons/Icon";
 import css from "./FooterContact.module.scss";
 

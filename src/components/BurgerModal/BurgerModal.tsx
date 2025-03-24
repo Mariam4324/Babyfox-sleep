@@ -1,5 +1,7 @@
 import css from "./BurgerModal.module.scss";
-import { LinkComponent } from "./../LinkComponent/LinkComponent";
+import { LinkComponent } from "../LinkComponent/LinkComponent";
+
+import React from "react";
 
 export const BurgerModal = ({ setBurger }) => {
     return (

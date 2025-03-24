@@ -1,8 +1,14 @@
+import React from "react";
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 
 export const ThemeToggle = () => {
     const { darkMode, toggleTheme } = useContext(ThemeContext);
+
+    if (!ThemeContext) {
+        // Обработка случая, когда контекст равен null
+        return null; // или можно вернуть какой-то запасной UI
+    }
 
     useEffect(() => {
         if (darkMode) {
@@ -18,4 +24,3 @@ export const ThemeToggle = () => {
         </button>
     );
 };
-

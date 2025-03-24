@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./Icons.module.scss";
 // size variants: medium, large
 

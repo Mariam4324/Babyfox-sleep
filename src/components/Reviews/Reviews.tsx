@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "../../layout/Container/Container";
 import { Button } from "../Button/Button";
 import { ReviewCard } from "../ReviewCard/ReviewCard";
@@ -6,7 +7,6 @@ import css from "./Reviews.module.scss";
 import { testimonials } from "../../assets/data";
 import { useContext } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider";
-import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 
 export const Reviews = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -27,23 +27,6 @@ export const Reviews = () => {
                     <Button buttonText={"больше отзывов"} btnBG={"standart"} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} />
                 </div>
             </Container>
-
-            <Pagination>
-                <PaginationContent>
-                    <PaginationItem>
-                        <PaginationPrevious href="#" />
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationLink href="#">1</PaginationLink>
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationEllipsis />
-                    </PaginationItem>
-                    <PaginationItem>
-                        <PaginationNext href="#" />
-                    </PaginationItem>
-                </PaginationContent>
-            </Pagination>
         </section>
     );
 };

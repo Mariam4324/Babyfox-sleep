@@ -1,3 +1,4 @@
+import React from "react";
 import { RatingStars } from "../RatingStars/RatingStars";
 
 export const ReviewCard = ({ author, date, rating, reviewText }) => {

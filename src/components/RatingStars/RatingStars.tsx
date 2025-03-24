@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const RatingStars = ({ rating }) => {
     const stars = [1, 2, 3, 4, 5];
 

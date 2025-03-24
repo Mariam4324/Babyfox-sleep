@@ -1,14 +1,20 @@
 import { createContext, useEffect, useState } from "react";
 
-export const ThemeContext = createContext(null);
+interface ThemeContextType {
+    darkMode: boolean;
+    toggleTheme: () => void;
+}
+
+export const ThemeContext = createContext<ThemeContextType | null>(null);
 
 export const ThemeProvider = ({ children }) => {
     const [darkMode, setDarkMode] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
         return savedTheme === "true"; // Преобразуем строку в логическое значение
     });
+
     useEffect(() => {
-        localStorage.setItem("theme", darkMode);
+        localStorage.setItem("theme", String(darkMode)); // localhost хранит только строки
     }, [darkMode]);
 
     const toggleTheme = () => {

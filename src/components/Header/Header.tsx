@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "../../layout/Container/Container";
 import { Burger } from "../Burger/Burger";

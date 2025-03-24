@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./AnimatedCross.module.scss"
 
 export const AnimatedCross = ({ setModal }) => {

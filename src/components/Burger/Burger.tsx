@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { BurgerModal } from "../BurgerModal/BurgerModal";
 import css from "./Burger.module.scss";

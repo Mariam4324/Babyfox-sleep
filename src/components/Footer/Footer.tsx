@@ -1,3 +1,4 @@
+import React from "react";
 import { Container } from "../../layout/Container/Container";
 import css from "./Footer.module.scss";
 import telegramIcon from "./../../assets/telegram.svg";

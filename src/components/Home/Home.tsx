@@ -13,9 +13,14 @@ import { ThemeContext } from "../../Providers/ThemeProvider";
 export const Home = () => {
     const { darkMode } = useContext(ThemeContext);
 
+    if (!ThemeContext) {
+        // Обработка случая, когда контекст равен null
+        return null; // или можно вернуть какой-то запасной UI
+    }
+
     return (
         <main className={`${css.home} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
-            <h1 className="text-error">!!!сайт находится в стадии внутренней доработки которая пока никак не повлияет на видимый функционал, происходит подготовка к видимым результамам за кулисами, рекомпозиция архитектуры!!!</h1>
+            <h1 className="text-error">!!!сайт находится в стадии внутренней доработки которая пока никак не повлияет на видимый функционал, происходит подготовка к видимым результамам за кулисами, рекомпозиция архитектуры, логика сайта может подломатся - это ок!!!</h1>
             <Container>
                 <div className={css.home__wrapper}>
                     <img className={css.home__photo} src={homePhoto} alt="Виктория Симонова" />
