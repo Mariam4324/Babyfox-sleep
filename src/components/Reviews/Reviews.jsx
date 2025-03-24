@@ -6,7 +6,7 @@ import css from "./Reviews.module.scss";
 import { testimonials } from "../../assets/data";
 import { useContext } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider";
-import { SliderSlick } from "../SliderSlick/SliderSlick";
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 
 export const Reviews = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -18,17 +18,32 @@ export const Reviews = () => {
                 <p className={`${css.reviews__text} text-black dark:text-white`}>Я горжусь тем, что моя работа приносит пользу родителям и их детям! Если вы тоже хотите поделиться своим опытом или задать вопрос, не стесняйтесь связаться с нами.</p>
 
                 <div className={css.reviews__wrapper}>
-                    <SliderSlick>
-                        {testimonials.map((testimonial) => (
-                            <ReviewCard key={testimonial.id} author={testimonial.author} rating={testimonial.rating} date={testimonial.date} reviewText={testimonial.text} />
-                        ))}
-                    </SliderSlick>
+                    {testimonials.map((testimonial) => (
+                        <ReviewCard key={testimonial.id} author={testimonial.author} rating={testimonial.rating} date={testimonial.date} reviewText={testimonial.text} />
+                    ))}
                 </div>
 
                 <div className={css.reviews__btn}>
                     <Button buttonText={"больше отзывов"} btnBG={"standart"} link={"https://www.instagram.com/babyfox.sleep?igsh=MXZxdDk4Y2RtOGIxZQ=="} />
                 </div>
             </Container>
+
+            <Pagination>
+                <PaginationContent>
+                    <PaginationItem>
+                        <PaginationPrevious href="#" />
+                    </PaginationItem>
+                    <PaginationItem>
+                        <PaginationLink href="#">1</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem>
+                        <PaginationEllipsis />
+                    </PaginationItem>
+                    <PaginationItem>
+                        <PaginationNext href="#" />
+                    </PaginationItem>
+                </PaginationContent>
+            </Pagination>
         </section>
     );
 };
