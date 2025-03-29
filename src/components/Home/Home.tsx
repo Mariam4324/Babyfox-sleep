@@ -7,19 +7,10 @@ import instIcon from "../../assets/inst.svg";
 import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsApp.svg";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
-import { useContext } from "react";
-import { ThemeContext } from "../../Providers/ThemeProvider";
 
 export const Home = () => {
-    const { darkMode } = useContext(ThemeContext);
-
-    if (!ThemeContext) {
-        // Обработка случая, когда контекст равен null
-        return null; // или можно вернуть какой-то запасной UI
-    }
-
     return (
-        <main className={`${css.home} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
+        <main className={`${css.home} dark:bg-black bg-white`}>
             <h1 className="text-error">!!!сайт находится в стадии внутренней доработки которая пока никак не повлияет на видимый функционал, происходит подготовка к видимым результамам за кулисами, рекомпозиция архитектуры, логика сайта может подломатся - это ок!!!</h1>
             <Container>
                 <div className={css.home__wrapper}>

@@ -8,7 +8,7 @@ import css from "./Header.module.scss";
 
 export const Header = () => {
     return (
-        <header className={`${css.header} bg-white dark:bg-black`}>
+        <header className={`${css.header} dark:bg-black bg-white`}>
             <Container>
                 <div className={css.header__wrapper}>
                     <Logo />

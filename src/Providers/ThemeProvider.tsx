@@ -1,20 +1,27 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, ReactNode } from "react";
 
 interface ThemeContextType {
     darkMode: boolean;
     toggleTheme: () => void;
 }
 
-export const ThemeContext = createContext<ThemeContextType | null>(null);
+export const ThemeContext = createContext<ThemeContextType>({
+    darkMode: false,
+    toggleTheme: () => {}
+});
 
-export const ThemeProvider = ({ children }) => {
+interface ThemeProviderProps {
+    children: ReactNode;
+}
+
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     const [darkMode, setDarkMode] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
-        return savedTheme === "true"; // Преобразуем строку в логическое значение
+        return savedTheme === "true";
     });
 
     useEffect(() => {
-        localStorage.setItem("theme", String(darkMode)); // localhost хранит только строки
+        localStorage.setItem("theme", String(darkMode));
     }, [darkMode]);
 
     const toggleTheme = () => {

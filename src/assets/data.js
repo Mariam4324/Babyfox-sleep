@@ -8,7 +8,6 @@ import childPhoto7 from "./card_child7.svg";
 import materialPicture1 from "./materials_pic1.jpg";
 import materialPicture2 from "./materials_pic2.jpg";
 import materialPicture3 from "./materials_pic3.jpg";
-// import materialPicture4 from "./materials_pic4.jpeg";
 
 export const testimonials = [
     {
@@ -204,4 +203,3 @@ export const articles = [
         img: materialPicture3,
     },
 ];
-
