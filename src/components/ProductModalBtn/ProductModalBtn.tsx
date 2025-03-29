@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./ProductModalBtn.module.scss";
+import styles from "./ProductModalBtn.module.scss";
 
 interface ProductModalBtnProps {
     link: string;
@@ -13,7 +13,7 @@ export const ProductModalBtn = ({ link, buttonText, btnBG }: ProductModalBtnProp
     };
 
     return (
-        <button onClick={handleClick} className={`${css.button} ${css[`button_${btnBG}`]} dark:hover:border-white`}>
+        <button onClick={handleClick} className={`${styles.button} ${styles[`button_${btnBG}`]} dark:hover:border-white`}>
             {buttonText}
         </button>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../layout/Container/Container.jsx";
 import { Title } from "../Title/Title.jsx";
 import { servicesData } from "../../assets/data.js";
-import css from "./Services.module.scss";
+import styles from "./Services.module.scss";
 import { Button } from "../Button/Button.jsx";
 import { useContext } from "react";
 import { ThemeContext } from "../../Providers/ThemeProvider.jsx";
@@ -13,13 +13,13 @@ export const Services = () => {
 
     return (
         <section id="services">
-            <div className={`${css.services} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
+            <div className={`${styles.services} ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
                 <Container>
                     <Title titleText={"Услуги"} />
 
-                    <p className={`${css.services__subtitle} text-black dark:text-white`}>Я предлагаю широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и мои программы адаптируются под индивидуальные потребности</p>
-
-                    <div className={css.services__wrapper}>
+                    <p className={`${styles.services__subtitle} text-black dark:text-white`}>Я предлагаю широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и мои программы адаптируются под индивидуальные потребности</p>
+styles
+                    <div className={styles.services__wrapper}>
                         {servicesData.map((product, index) => {
                             const uniqueKey = `item-${index}-${new Date().getTime()}`;
 
@@ -27,7 +27,7 @@ export const Services = () => {
                         })}
                     </div>
 
-                    <div className={css.services__btn}>
+                    <div className={styles.services__btn}>
                         <Button btnBG={"standart"} buttonText={"написать консультанту по сну"} link={"https://wa.me/79654041234"} />
                     </div>
                 </Container>

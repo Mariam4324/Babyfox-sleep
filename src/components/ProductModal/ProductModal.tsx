@@ -1,7 +1,7 @@
 import React from "react";
 import { useContext, useEffect } from "react";
 import { AnimatedCross } from "../AnimatedCross/AnimatedCross";
-import css from "./ProductModal.module.scss";
+import styles from "./ProductModal.module.scss";
 import { ThemeContext } from "../../Providers/ThemeProvider";
 import { ProductModalBtn } from "../ProductModalBtn/ProductModalBtn";
 
@@ -43,26 +43,26 @@ export const ProductModal = ({ how, setModal, modal, type, term, title, price, f
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <div className={`${css.modal}  ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
-            <div className={css.modal__top}>
+        <div className={`${styles.modal}  ${darkMode ? "bg-black text-white dark" : "bg-white text-black"}`}>
+            <div className={styles.modal__top}>
                 <AnimatedCross setModal={setModal} />
-                <div className={`${css.modal__term} ${css[`modal__term_${type}`]} text-white dark:text-black`}>{term}</div>
+                <div className={`${styles.modal__term} ${styles[`modal__term_${type}`]} text-white dark:text-black`}>{term}</div>
             </div>
 
-            <h2 className={`${css.modal__name} text-black dark:text-white`}>{title}</h2>
+            <h2 className={`${styles.modal__name} text-black dark:text-white`}>{title}</h2>
 
-            <div className={`${css["modal-wrapper"]} ${css[`modal-wrapper_${type}`]}`}>
-                <span className={css["modal-wrapper__label"]}>Для кого?</span>
-                <span className={css["modal-wrapper__text"]}>{forWho}</span>
+            <div className={`${styles["modal-wrapper"]} ${styles[`modal-wrapper_${type}`]}`}>
+                <span className={styles["modal-wrapper__label"]}>Для кого?</span>
+                <span className={styles["modal-wrapper__text"]}>{forWho}</span>
             </div>
 
-            <div className={`${css["modal-wrapper"]} ${css[`modal-wrapper_${type}`]}`}>
-                <span className={css["modal-wrapper__label"]}>Как проходит?</span>
-                <span className={css["modal-wrapper__text"]}>{how}</span>
+            <div className={`${styles["modal-wrapper"]} ${styles[`modal-wrapper_${type}`]}`}>
+                <span className={styles["modal-wrapper__label"]}>Как проходит?</span>
+                <span className={styles["modal-wrapper__text"]}>{how}</span>
             </div>
 
-            <div className={css.modal__bottom}>
-                <span className={`${css.modal__price} text-black dark:text-white`}>{price}</span>
+            <div className={styles.modal__bottom}>
+                <span className={`${styles.modal__price} text-black dark:text-white`}>{price}</span>
                 <ProductModalBtn buttonText="Перейти" btnBG={type} link="https://t.me/babyfox_sleep" />
             </div>
         </div>

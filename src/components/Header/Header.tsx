@@ -4,13 +4,13 @@ import { Container } from "../../layout/Container/Container";
 import { Burger } from "../Burger/Burger";
 import { LinkComponent } from "../LinkComponent/LinkComponent";
 import { Logo } from "../Logo/Logo";
-import css from "./Header.module.scss";
+import styles from "./Header.module.scss";
 
 export const Header = () => {
     return (
-        <header className={`${css.header} dark:bg-black bg-white`}>
+        <header className={`${styles.header} dark:bg-black bg-white`}>
             <Container>
-                <div className={css.header__wrapper}>
+                <div className={styles.header__wrapper}>
                     <Logo />
 
                     <Link to="login">
@@ -20,8 +20,8 @@ export const Header = () => {
                     </Link>
                 </div>
 
-                <div className={css.header__bottom}>
-                    <ul className={css["header-nav"]}>
+                <div className={styles.header__bottom}>
+                    <ul className={styles["header-nav"]}>
                         <LinkComponent pathTo={"#"} linkText={"Главная"} />
                         <LinkComponent pathTo={"#services"} linkText={"Услуги"} />
                         <LinkComponent pathTo={"#reviews"} linkText={"Отзывы"} />
