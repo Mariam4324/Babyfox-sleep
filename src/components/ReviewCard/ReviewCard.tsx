@@ -19,7 +19,18 @@ export const ReviewCard = ({ author, date, rating, reviewText }: ReviewCardProps
                 <div className="flex items-center mb-2">
                     <RatingStars rating={rating} />
                 </div>
-                <p className="text-gray-700">{reviewText}</p>
+                <p
+                    style={{
+                        display: "-webkit-box",
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                        WebkitLineClamp: 6,
+                        textOverflow: "ellipsis",
+                    }}
+                    className="text-gray-700"
+                >
+                    {reviewText}
+                </p>
             </div>
         </div>
     );

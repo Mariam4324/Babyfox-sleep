@@ -29,3 +29,11 @@
         align-items: center;
     }
 }
+
+@media (max-width: 960px) {
+    .reviews {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    }
+}

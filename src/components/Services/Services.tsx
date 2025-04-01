@@ -18,7 +18,6 @@ export const Services = () => {
                     <Title titleText={"Услуги"} />
 
                     <p className={`${styles.services__subtitle} text-black dark:text-white`}>Я предлагаю широкий спектр услуг, направленных на помощь родителям в организации сна их детей. Каждый малыш уникален, и мои программы адаптируются под индивидуальные потребности</p>
-styles
                     <div className={styles.services__wrapper}>
                         {servicesData.map((product, index) => {
                             const uniqueKey = `item-${index}-${new Date().getTime()}`;
