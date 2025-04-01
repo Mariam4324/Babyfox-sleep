@@ -11,7 +11,6 @@ import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 export const Home = () => {
     return (
         <main className={`${styles.home} dark:bg-black bg-white`}>
-            <h1 className="text-error">!!!сайт находится в стадии внутренней доработки которая пока никак не повлияет на видимый функционал, происходит подготовка к видимым результамам за кулисами, рекомпозиция архитектуры, логика сайта может подломатся - это ок!!!</h1>
             <Container>
                 <div className={styles.home__wrapper}>
                     <img className={styles.home__photo} src={homePhoto} alt="Виктория Симонова" />

@@ -11,12 +11,12 @@ export const LatestUpdateModal = () => {
 
     useEffect(() => {
         // Проверяем, видел ли пользователь уже модальное окно
-        // const hasSeenModal = localStorage.getItem("hasSeenUpdatesModal");
+        const hasSeenModal = localStorage.getItem("hasSeenUpdatesModal");
         
-        // if (!hasSeenModal) {
+        if (!hasSeenModal) {
           setIsOpen(true);
-          // localStorage.setItem("hasSeenUpdatesModal", "true");
-        // }
+          localStorage.setItem("hasSeenUpdatesModal", "true");
+        }
       }, []);
     
       const handleClose = () => {
