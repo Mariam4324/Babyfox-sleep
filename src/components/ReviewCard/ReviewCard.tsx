@@ -1,7 +1,14 @@
 import React from "react";
 import { RatingStars } from "../RatingStars/RatingStars";
 
-export const ReviewCard = ({ author, date, rating, reviewText }) => {
+interface ReviewCardProps {
+    author: string;
+    date: string;
+    rating: string;
+    reviewText: string;
+}
+
+export const ReviewCard = ({ author, date, rating, reviewText }: ReviewCardProps) => {
     return (
         <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="p-4">
