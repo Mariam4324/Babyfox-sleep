@@ -12,7 +12,7 @@ import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
 import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
 import { Articles } from "../pages/Articles/Articles";
 import LoginForm from "../components/LoginForm/LoginForm";
-import { LatestUpdateModal } from "../components/latestUpdateModal/latestUpdateModal";
+import { LatestUpdateModal } from "../components/LatestUpdateModal/LatestUpdateModal";
 
 export const router = createBrowserRouter([
     {
