@@ -12,12 +12,14 @@ import { ThemeToggle } from "../components/ThemeToggle/ThemeToggle";
 import { RegistrationForm } from "../components/RegistrationForm/RegistrationForm";
 import { Articles } from "../pages/Articles/Articles";
 import LoginForm from "../components/LoginForm/LoginForm";
+import { LatestUpdateModal } from "../components/latestUpdateModal/latestUpdateModal";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: (
             <>
+                <LatestUpdateModal />
                 <Header />
                 <Home />
                 <Services />
