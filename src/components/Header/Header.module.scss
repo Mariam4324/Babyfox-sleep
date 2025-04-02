@@ -17,6 +17,12 @@
       margin-top: 5px;
     }
 
+    &__holder {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
     &-nav {
         display: flex;
         align-items: center;
