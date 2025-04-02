@@ -116,16 +116,6 @@ a {
     font-weight: 800;
 }
 
-.materials {
-    &__cards {
-        margin: 30px 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-}
-
 @layer base {
     :root {
         --background: 0 0% 100%;

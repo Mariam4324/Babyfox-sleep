@@ -13,6 +13,14 @@
         max-width: 920px;
         margin-top: 24px;
     }
+    
+    &__cards {
+        margin: 30px auto 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
     &__title {
         display: -webkit-box;
@@ -21,12 +29,12 @@
         overflow: hidden;
     }
 
-    &__button {
-        transition: 0.5s all;
-        width: 153px;
-        margin: 0 auto;
-        margin-top: 45px;
-    }
+    // &__button {
+    //     transition: 0.5s all;
+    //     width: 153px;
+    //     margin: 0 auto;
+    //     margin-top: 30px;
+    // }
 
     &__button:hover {
         background: #fff;
@@ -36,7 +44,7 @@
     &__btn {
         display: flex;
         justify-content: center;
-        margin: 55px auto 0;
+        margin: 30px auto 0;
     }
 }
 

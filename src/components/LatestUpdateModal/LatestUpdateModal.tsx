@@ -6,12 +6,12 @@ export const LatestUpdateModal = () => {
 
     useEffect(() => {
         // Проверяем, видел ли пользователь уже модальное окно
-        const hasSeenModal = localStorage.getItem("LatestUpdateModal");
+        // const hasSeenModal = localStorage.getItem("LatestUpdateModal");
 
-        if (!hasSeenModal) {
+        // if (!hasSeenModal) {
             setIsOpen(true);
-            localStorage.setItem("LatestUpdaetModal", "true");
-        }
+            // localStorage.setItem("LatestUpdaetModal", "true");
+        // }
     }, []);
 
     const handleClose = () => {
@@ -42,6 +42,16 @@ export const LatestUpdateModal = () => {
                     <div className="p-4 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                         <h3 className="font-semibold text-purple-600 dark:text-purple-400">Модальное окно обновлений</h3>
                         <p className="text-sm mt-1 text-muted-foreground">Добавлено уведомление о новых функциях.</p>
+                    </div>
+
+                    <div className="p-4 bg-purple-50 dark:bg-blue-900/30 rounded-lg">
+                        <h3 className="font-semibold text-blue-600 dark:text-blue-400">Обновленные статьи</h3>
+                        <p className="text-sm mt-1 text-muted-foreground">Новый дизайн статей и отдельная страница со статьями.</p>
+                    </div>
+
+                    <div className="p-4 bg-purple-50 dark:bg-green-900/30 rounded-lg">
+                        <h3 className="font-semibold text-green-600 dark:text-green-400">Редизайн компонентов</h3>
+                        <p className="text-sm mt-1 text-muted-foreground">Новый дизайн шапки сайта и страницы 404.</p>
                     </div>
                 </div>
             </DialogContent>

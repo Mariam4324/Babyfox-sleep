@@ -6,7 +6,6 @@ import { Icon } from "../Icons/Icon";
 import instIcon from "../../assets/inst.svg";
 import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsApp.svg";
-import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 export const Home = () => {
     return (
@@ -28,7 +27,6 @@ export const Home = () => {
                     </div>
                 </div>
             </Container>
-            <ThemeToggle />
         </main>
     );
 };

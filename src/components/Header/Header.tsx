@@ -4,6 +4,7 @@ import { Burger } from "../Burger/Burger";
 import { LinkComponent } from "../LinkComponent/LinkComponent";
 import { Logo } from "../Logo/Logo";
 import styles from "./Header.module.scss";
+import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 
 export const Header = () => {
     return (
@@ -33,6 +34,7 @@ export const Header = () => {
                     </div>
                 </div>
             </Container>
+            <ThemeToggle />
         </header>
     );
 };
