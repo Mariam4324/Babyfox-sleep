@@ -18,12 +18,12 @@ export const MaterialsCard = ({ title, date, text, link, picture }: MaterialsCar
                     <img className={styles.materials__picture} src={picture} alt="фотография статьи" />
                 </div>
                 <div className={styles.materials__bottom}>
-                    <div className={`${styles.materials__subtitle} ${["title-extra"]} text-black dark:text-white`}>{title}</div>
+                    <div className={`${styles.materials__subtitle} ${["title-extra"]} text-sm font-medium text-black dark:text-white`}>{title}</div>
                     <div className={styles.materials__separator}>
-                        <time className={`${styles.materials__date} ${["text-comment"]} text-black dark:text-white`}>{date}</time>
+                        <time className={`${styles.materials__date} ${["text-comment"]} text-xs whitespace-nowrap inline-block text-black dark:text-white`}>{date}</time>
                         <div className={styles.materials__subline}></div>
                     </div>
-                    <div className={`${styles.materials__text} ${"text"} text-black dark:text-white`}>{text}</div>
+                    <div className={`${styles.materials__text} ${"text"} text-xs text-black dark:text-white`}>{text}</div>
                 </div>
             </div>
         </a>
