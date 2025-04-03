@@ -9,8 +9,8 @@ export const LatestUpdateModal = () => {
         // const hasSeenModal = localStorage.getItem("LatestUpdateModal");
 
         // if (!hasSeenModal) {
-            setIsOpen(true);
-            // localStorage.setItem("LatestUpdaetModal", "true");
+        setIsOpen(true);
+        // localStorage.setItem("LatestUpdaetModal", "true");
         // }
     }, []);
 
@@ -22,7 +22,7 @@ export const LatestUpdateModal = () => {
         <Dialog open={isOpen} onOpenChange={handleClose}>
             <DialogContent className="sm:max-w-[425px] rounded-lg fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]" onInteractOutside={handleClose}>
                 <DialogHeader>
-                    <DialogTitle className="text-xl font-bold text-center">Последние обновления</DialogTitle>
+                    <DialogTitle className="text-xl font-bold">Последние обновления</DialogTitle>
                     <button onClick={handleClose} className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
                         <span className="sr-only">Закрыть</span>
                     </button>
