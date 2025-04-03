@@ -4,7 +4,8 @@ const pathTranslation = {
     home: "главная",
     registration: "регистрация",
     login: "войти",
-    ForgotPassword: "восстановление пароля",
+    forgotPassword: "восстановление пароля",
+    education: "обучение"
 };
 
 export const Breadcrumbs = () => {

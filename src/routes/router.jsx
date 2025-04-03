@@ -79,11 +79,14 @@ export const router = createBrowserRouter([
     },
 
     {
-        path: "ForgotPassword",
+        path: "forgotPassword",
         element: (
             <>
-                <ForgotPassword /> <ThemeToggle />
+                <ForgotPassword />
+                <ThemeToggle />
             </>
         ),
     },
+
+    
 ]);

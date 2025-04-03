@@ -72,7 +72,7 @@ const LoginForm = () => {
 
                                 <div className="flex justify-end mt-[10px]">
                                     <Button variant="link" size="sm" asChild>
-                                        <Link to="/ForgotPassword">Забыли пароль?</Link>
+                                        <Link to="/forgotPassword">Забыли пароль?</Link>
                                     </Button>
                                 </div>
 
