@@ -30,8 +30,8 @@ export const LatestUpdateModal = () => {
 
                 <div className="space-y-2 py-[7px]">
                     <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
-                        <h3 className="font-semibold text-blue-600 dark:text-blue-400">Темная и светлая тема</h3>
-                        <p className="text-sm mt-1 text-muted-foreground">Теперь тема работает исправно и стабильно.</p>
+                        <h3 className="font-semibold text-blue-600 dark:text-blue-400">Забыли пароль?</h3>
+                        <p className="text-sm mt-1 text-muted-foreground">Добавлена страница восстановления пароля.</p>
                     </div>
 
                     <div className="p-4 bg-green-50 dark:bg-green-900/30 rounded-lg">

@@ -1,10 +1,10 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const pathTranslation = {
     home: "главная",
     registration: "регистрация",
     login: "войти",
+    ForgotPassword: "восстановление пароля",
 };
 
 export const Breadcrumbs = () => {
@@ -26,16 +26,16 @@ export const Breadcrumbs = () => {
 
                     return (
                         <li key={to} className="flex items-center gap-2">
-                                {lastPath ? (
-                                    <>
-                                        <div className="text-gray-500 font-bold w-max-content">/</div>
-                                        <span className="text-gray-500 font-bold">{currentPath}</span>
-                                    </>
-                                ) : (
-                                    <Link to={to} className="text-gray-500 font-semibold hover:text-orange-500">
-                                        {currentPath}
-                                    </Link>
-                                )}
+                            {lastPath ? (
+                                <>
+                                    <div className="text-gray-500 font-bold w-max-content">/</div>
+                                    <span className="text-gray-500 font-bold">{currentPath}</span>
+                                </>
+                            ) : (
+                                <Link to={to} className="text-gray-500 font-semibold hover:text-orange-500">
+                                    {currentPath}
+                                </Link>
+                            )}
                         </li>
                     );
                 })}

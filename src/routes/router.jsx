@@ -13,6 +13,7 @@ import { RegistrationForm } from "../components/RegistrationForm/RegistrationFor
 import { Articles } from "../pages/Articles/Articles";
 import LoginForm from "../components/LoginForm/LoginForm";
 import { LatestUpdateModal } from "../components/LatestUpdateModal/LatestUpdateModal";
+import { ForgotPassword } from "../components/ForgotPassword/ForgotPassword";
 
 export const router = createBrowserRouter([
     {
@@ -73,6 +74,15 @@ export const router = createBrowserRouter([
             <>
                 <NotFound />
                 <ThemeToggle />
+            </>
+        ),
+    },
+
+    {
+        path: "ForgotPassword",
+        element: (
+            <>
+                <ForgotPassword /> <ThemeToggle />
             </>
         ),
     },

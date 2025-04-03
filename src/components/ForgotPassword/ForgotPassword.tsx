@@ -8,22 +8,22 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
-const LoginForm = () => {
+export const ForgotPassword = () => {
     const navigate = useNavigate();
 
     const handleRegisterNavigate = () => {
         navigate("/registration");
     };
+
     const {
         register,
-        handleSubmit,
-        reset,
+        formState: { errors, isSubmitting },
         setError,
-        formState: { isSubmitting, errors },
+        reset,
+        handleSubmit,
     } = useForm({
         defaultValues: {
             email: "",
-            password: "",
         },
         resolver: zodResolver(loginSchema),
     });
@@ -36,7 +36,7 @@ const LoginForm = () => {
             throw new Error();
         } catch (error) {
             setError("root", {
-                message: "пользователь с таким email уже существует",
+                message: "аккаунта с таким email не существует",
             });
         }
     };
@@ -51,38 +51,24 @@ const LoginForm = () => {
                 <div className="flex-1 grid place-items-center p-4">
                     <Card className="w-full max-w-md">
                         <CardHeader className="pt-[20px] pb-[10px]">
-                            <CardTitle className="text-2xl dark:text-white">Вход в личный кабинет</CardTitle>
+                            <CardTitle className="text-2xl dark:text-white">Востановление пароля</CardTitle>
                         </CardHeader>
 
                         <CardContent>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className="flex flex-col space-y-0">
-                                    <div>
-                                        <Label htmlFor="email">Email</Label>
-                                        <Input id="email" type="email" {...register("email")} placeholder="Ваш email" />
-                                        {errors.email && <p className="text-sm text-destructive">{errors.email.message}</p>}
-                                    </div>
-
-                                    <div>
-                                        <Label htmlFor="password">Пароль</Label>
-                                        <Input id="password" type="password" {...register("password")} placeholder="Ваш пароль" />
-                                        {errors.password && <p className="text-sm text-destructive">{errors.password.message}</p>}
-                                    </div>
+                                    <Label htmlFor="email">Email</Label>
+                                    <Input id="email" type="email" {...register("email")} placeholder="Ваш email" />
+                                    {errors.email && <p className="text-sm text-destructive">{errors.email.message}</p>}
                                 </div>
 
-                                <div className="flex justify-end mt-[10px]">
-                                    <Button variant="link" size="sm" asChild>
-                                        <Link to="/ForgotPassword">Забыли пароль?</Link>
-                                    </Button>
-                                </div>
-
-                                <Button type="submit" className="w-full mt-[5px]" disabled={isSubmitting}>
-                                    {isSubmitting ? "Загрузка..." : "Войти"}
+                                <Button type="submit" className="w-full mt-[30px]" disabled={isSubmitting}>
+                                    {isSubmitting ? "Загрузка..." : "Получить код"}
                                 </Button>
 
                                 {errors.root && <p className="text-sm text-destructive text-center">{errors.root.message}</p>}
 
-                                <p className="text-sm text-muted-foreground text-center mt-[5px]">
+                                <p className="text-sm text-muted-foreground mt-[5px]">
                                     Ещё нет аккаунта?
                                     <Button variant="link" size="sm" className="px-1" onClick={handleRegisterNavigate}>
                                         Зарегистрироваться
@@ -96,5 +82,3 @@ const LoginForm = () => {
         </>
     );
 };
-
-export default LoginForm;
