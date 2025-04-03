@@ -12,7 +12,7 @@ export const Breadcrumbs = () => {
     const pathnames = location.pathname.split("/").filter((value) => value);
 
     return (
-        <nav className="bg-inherit dark:bg-gray-900 p-4 shadow-md">
+        <nav className="dark:bg-black p-4">
             <ul className="flex space-x-2">
                 <li>
                     <Link to="/" className="text-gray-500 hover:text-orange-500">

@@ -53,6 +53,11 @@ export const LatestUpdateModal = () => {
                         <h3 className="font-semibold text-green-600 dark:text-green-400">Редизайн компонентов</h3>
                         <p className="text-sm mt-1 text-muted-foreground">Новый дизайн шапки сайта и страницы 404.</p>
                     </div>
+
+                    <div className="p-4 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                        <h3 className="font-semibold text-purple-600 dark:text-purple-400">Редизайн регистрации и авторизации</h3>
+                        <p className="text-sm mt-1 text-muted-foreground">Новый дизайн форм регистрации и авторизации.</p>
+                    </div>
                 </div>
             </DialogContent>
         </Dialog>
